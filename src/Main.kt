@@ -9,8 +9,17 @@ fun main() {
     sayHello()
     println(megValami())
 
-    sayWhatIWant("Kisregény következik")
-    sayWhatIWant("Mi az email?")
+    sayWhatIWant( itemToSay = "Kisregény következik")
+    sayWhatIWant( itemToSay = "Mi az email?")
+    printOutWithForEach()
+
+}
+
+fun printOutWithForEach(){
+    val arrayToPrintOut = arrayOf("Bevásárlólista:", "Kenyér", "Tej", "Szalámi")
+    arrayToPrintOut.forEach { beszedesebbNevForEachnek ->
+        println(beszedesebbNevForEachnek)
+    }
 }
 
 fun sayWhatIWant(itemToSay:String){
